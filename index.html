@@ -30,7 +30,7 @@
 
 <style>
   :root {
-    /* ธีมสีฟ้า น้ำทะเล ใหม่ทั้งหมด */
+    /* ธีมสีฟ้า น้ำทะเล */
     --bg: #0B1F33;
     --bg-2: #112A40;
     --surface: #163A56;
@@ -1355,10 +1355,10 @@
 <body>
 
 <header class="topbar">
-  <div class="brand-logo">
-  <!-- เพิ่ม ?v=2 ตามหลังชื่อไฟล์เพื่อตัดแคช -->
-  <img src="./logo.png?v=2" alt="โลโก้โรงเรียนสัตหีบวิทยาคม">
-	</div>
+  <div class="brand">
+    <div class="brand-logo">
+      <img src="./logo.png?v=2" alt="โลโก้โรงเรียนสัตหีบวิทยาคม">
+    </div>
     <div class="brand-text">
       <h1>โรงเรียนสัตหีบวิทยาคม</h1>
       <p>ม.181 ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี 20250 · ระบบเยี่ยมบ้าน</p>
@@ -1505,13 +1505,15 @@
             </div>
             <div class="field">
               <label>ระดับชั้น <span class="req">*</span></label>
+              <!-- แก้ไขตัวเลือกเป็น มัธยมศึกษาปีที่ 1 - 6 -->
               <select name="grade" required>
                 <option value="">-- เลือกระดับชั้น --</option>
-                <option>อนุบาล 1</option><option>อนุบาล 2</option><option>อนุบาล 3</option>
-                <option>ประถมศึกษาปีที่ 1</option><option>ประถมศึกษาปีที่ 2</option>
-                <option>ประถมศึกษาปีที่ 3</option><option>ประถมศึกษาปีที่ 4</option>
-                <option>ประถมศึกษาปีที่ 5</option><option>ประถมศึกษาปีที่ 6</option>
-                <option>มัธยมศึกษาปีที่ 1</option><option>มัธยมศึกษาปีที่ 2</option><option>มัธยมศึกษาปีที่ 3</option>
+                <option>มัธยมศึกษาปีที่ 1</option>
+                <option>มัธยมศึกษาปีที่ 2</option>
+                <option>มัธยมศึกษาปีที่ 3</option>
+                <option>มัธยมศึกษาปีที่ 4</option>
+                <option>มัธยมศึกษาปีที่ 5</option>
+                <option>มัธยมศึกษาปีที่ 6</option>
               </select>
             </div>
             <div class="field">
@@ -1792,13 +1794,15 @@
       <select class="filter-select" id="filter-semester">
         <option value="">ทุกภาคเรียน</option>
       </select>
+      <!-- แก้ไขตัวกรองเป็น ม.1-6 -->
       <select class="filter-select" id="filter-grade">
         <option value="">ทุกชั้น</option>
-        <option>อนุบาล 1</option><option>อนุบาล 2</option><option>อนุบาล 3</option>
-        <option>ประถมศึกษาปีที่ 1</option><option>ประถมศึกษาปีที่ 2</option>
-        <option>ประถมศึกษาปีที่ 3</option><option>ประถมศึกษาปีที่ 4</option>
-        <option>ประถมศึกษาปีที่ 5</option><option>ประถมศึกษาปีที่ 6</option>
-        <option>มัธยมศึกษาปีที่ 1</option><option>มัธยมศึกษาปีที่ 2</option><option>มัธยมศึกษาปีที่ 3</option>
+        <option>มัธยมศึกษาปีที่ 1</option>
+        <option>มัธยมศึกษาปีที่ 2</option>
+        <option>มัธยมศึกษาปีที่ 3</option>
+        <option>มัธยมศึกษาปีที่ 4</option>
+        <option>มัธยมศึกษาปีที่ 5</option>
+        <option>มัธยมศึกษาปีที่ 6</option>
       </select>
       <select class="filter-select" id="filter-screen">
         <option value="">ทุกกลุ่ม</option>
@@ -1848,13 +1852,15 @@
         <option value="เสี่ยง">เฉพาะกลุ่มเสี่ยง</option>
         <option value="ปัญหา">เฉพาะกลุ่มมีปัญหา</option>
       </select>
+      <!-- แก้ไขตัวกรองแผนที่เป็น ม.1-6 -->
       <select class="filter-select" id="map-filter-grade">
         <option value="">ทุกระดับชั้น</option>
-        <option>อนุบาล 1</option><option>อนุบาล 2</option><option>อนุบาล 3</option>
-        <option>ประถมศึกษาปีที่ 1</option><option>ประถมศึกษาปีที่ 2</option>
-        <option>ประถมศึกษาปีที่ 3</option><option>ประถมศึกษาปีที่ 4</option>
-        <option>ประถมศึกษาปีที่ 5</option><option>ประถมศึกษาปีที่ 6</option>
-        <option>มัธยมศึกษาปีที่ 1</option><option>มัธยมศึกษาปีที่ 2</option><option>มัธยมศึกษาปีที่ 3</option>
+        <option>มัธยมศึกษาปีที่ 1</option>
+        <option>มัธยมศึกษาปีที่ 2</option>
+        <option>มัธยมศึกษาปีที่ 3</option>
+        <option>มัธยมศึกษาปีที่ 4</option>
+        <option>มัธยมศึกษาปีที่ 5</option>
+        <option>มัธยมศึกษาปีที่ 6</option>
       </select>
       <button class="btn btn-sm" onclick="centerOnSchool()">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
